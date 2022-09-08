@@ -1,0 +1,22 @@
+{
+  "name": "cloudmos-provider-proxy",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg main.js --targets win --output build/cloudmos-provider-proxy.exe",
+    "build-mac": "pkg main.js --targets macos --output build/cloudmos-provider-proxy",
+    "build-linux": "pkg main.js --targets linux --output build/cloudmos-provider-proxy-lin"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "winston": "^3.3.3",
+    "ws": "^7.5.3"
+  },
+  "devDependencies": {
+    "pkg": "^5.2.0"
+  }
+}
